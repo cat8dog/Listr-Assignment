@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Listr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="RootView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="8Ii-iX-Ruz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="390"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Product Info View" translatesAutoresizingMaskIntoConstraints="NO" id="xMB-8k-rSB">
+                                <rect key="frame" x="0.0" y="390" width="600" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="BitMaker Labs Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lb-rw-tfa">
+                                <rect key="frame" x="22" y="15" width="556" height="83"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-fC-P5T">
+                                <rect key="frame" x="22" y="97" width="556" height="84"/>
+                                <string key="text">This logo presented by @bitmakerlabs.  The PSD comes with a plain simple logo mockup template.  you can edit the logo colour and use the smart layer to apply your designs.  The high-resolution makes it easy to frame specific details with close-ups.  </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xMB-8k-rSB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1mH-Pa-Foe"/>
+                            <constraint firstItem="jHT-fC-P5T" firstAttribute="top" secondItem="4lb-rw-tfa" secondAttribute="bottom" constant="-1" id="5wI-cc-buZ"/>
+                            <constraint firstItem="4lb-rw-tfa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="8Dq-GT-Gc4"/>
+                            <constraint firstItem="jHT-fC-P5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="98d-yz-gpy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4lb-rw-tfa" secondAttribute="trailing" constant="6" id="L2H-lU-SjR"/>
+                            <constraint firstAttribute="trailing" secondItem="xMB-8k-rSB" secondAttribute="trailing" id="NeX-7M-KhW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jHT-fC-P5T" secondAttribute="trailing" constant="6" id="SzH-dD-iOL"/>
+                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T4a-UL-CeT"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ii-iX-Ruz" secondAttribute="trailing" id="TIg-Te-aPf"/>
+                            <constraint firstItem="xMB-8k-rSB" firstAttribute="top" secondItem="8Ii-iX-Ruz" secondAttribute="bottom" id="aNc-FS-dNK"/>
+                            <constraint firstItem="xMB-8k-rSB" firstAttribute="top" secondItem="jHT-fC-P5T" secondAttribute="bottom" constant="209" id="hZc-aL-J2v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xMB-8k-rSB" secondAttribute="bottom" id="msG-YN-76w"/>
+                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nrZ-8k-Iu6"/>
+                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="ocZ-W4-WaI"/>
+                            <constraint firstItem="4lb-rw-tfa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="sKC-Z3-ZiV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Product Info View" width="16" height="16"/>
+        <image name="tshirt" width="16" height="16"/>
+    </resources>
 </document>
