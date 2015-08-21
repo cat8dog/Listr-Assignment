@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Listr View Controller-->
@@ -32,103 +31,12 @@
                     <navigationItem key="navigationItem" id="27X-Or-37i"/>
                     <connections>
                         <outlet property="tableView" destination="Oy4-TT-bKl" id="21B-tV-lVP"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="alertSegue" id="qHb-24-42h"/>
+                        <segue destination="LlP-sp-YAt" kind="presentation" identifier="alertSegue" id="pDp-Uz-Oxo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4R-PM-ezX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1994" y="-202.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Listr" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="RootView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="8Ii-iX-Ruz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="390"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Product Info View" translatesAutoresizingMaskIntoConstraints="NO" id="xMB-8k-rSB">
-                                <rect key="frame" x="0.0" y="390" width="600" height="210"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" text="BitMaker Labs Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lb-rw-tfa">
-                                <rect key="frame" x="22" y="15" width="556" height="83"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-fC-P5T">
-                                <rect key="frame" x="22" y="97" width="556" height="84"/>
-                                <string key="text">This logo presented by @bitmakerlabs.  The PSD comes with a plain simple logo mockup template.  you can edit the logo colour and use the smart layer to apply your designs.  The high-resolution makes it easy to frame specific details with close-ups.  </string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="5TM-pm-g4o"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ii-iX-Ruz" secondAttribute="bottom" id="65G-Vu-Iqr"/>
-                            <constraint firstItem="xMB-8k-rSB" firstAttribute="leading" secondItem="8Ii-iX-Ruz" secondAttribute="trailing" id="ABj-qb-UQo"/>
-                            <constraint firstItem="4lb-rw-tfa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="Bwr-mr-Kpp"/>
-                            <constraint firstItem="jHT-fC-P5T" firstAttribute="top" secondItem="4lb-rw-tfa" secondAttribute="bottom" id="Ini-4e-h0G"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xMB-8k-rSB" secondAttribute="bottom" id="MU3-BL-FwF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xMB-8k-rSB" secondAttribute="trailing" id="Nvf-g1-jMn"/>
-                            <constraint firstItem="xMB-8k-rSB" firstAttribute="leading" secondItem="jHT-fC-P5T" secondAttribute="trailing" constant="22" id="YMt-HE-Lg7"/>
-                            <constraint firstItem="4lb-rw-tfa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="axh-oH-iqw"/>
-                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bm3-XS-1IP"/>
-                            <constraint firstItem="jHT-fC-P5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="cjU-o4-Pds"/>
-                            <constraint firstItem="xMB-8k-rSB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="izz-Mj-wwa"/>
-                            <constraint firstItem="8Ii-iX-Ruz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="j6c-Hw-bbf"/>
-                            <constraint firstItem="xMB-8k-rSB" firstAttribute="leading" secondItem="4lb-rw-tfa" secondAttribute="trailing" constant="22" id="nP4-kl-SZ4"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="5TM-pm-g4o"/>
-                                <exclude reference="bm3-XS-1IP"/>
-                                <exclude reference="j6c-Hw-bbf"/>
-                                <exclude reference="Bwr-mr-Kpp"/>
-                                <exclude reference="axh-oH-iqw"/>
-                                <exclude reference="Ini-4e-h0G"/>
-                                <exclude reference="cjU-o4-Pds"/>
-                                <exclude reference="ABj-qb-UQo"/>
-                                <exclude reference="Nvf-g1-jMn"/>
-                                <exclude reference="YMt-HE-Lg7"/>
-                                <exclude reference="izz-Mj-wwa"/>
-                                <exclude reference="nP4-kl-SZ4"/>
-                                <exclude reference="65G-Vu-Iqr"/>
-                                <exclude reference="MU3-BL-FwF"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="5TM-pm-g4o"/>
-                                <include reference="bm3-XS-1IP"/>
-                                <include reference="j6c-Hw-bbf"/>
-                                <include reference="Bwr-mr-Kpp"/>
-                                <include reference="axh-oH-iqw"/>
-                                <include reference="Ini-4e-h0G"/>
-                                <include reference="cjU-o4-Pds"/>
-                                <include reference="ABj-qb-UQo"/>
-                                <include reference="Nvf-g1-jMn"/>
-                                <include reference="YMt-HE-Lg7"/>
-                                <include reference="izz-Mj-wwa"/>
-                                <include reference="nP4-kl-SZ4"/>
-                                <include reference="65G-Vu-Iqr"/>
-                                <include reference="MU3-BL-FwF"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1557" y="546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xVP-VR-Hpi">
@@ -148,9 +56,79 @@
             </objects>
             <point key="canvasLocation" x="1182" y="-202.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="zRf-ne-t2b">
+            <objects>
+                <viewController id="LlP-sp-YAt" customClass="ViewController" customModule="Listr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tb9-Xi-yl0"/>
+                        <viewControllerLayoutGuide type="bottom" id="guN-gj-VLk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cD6-Pr-G0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-qe-Qpg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="390"/>
+                            </imageView>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="600477_10150861154782032_4534596_n" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-MA-ssZ" userLabel="Jack">
+                                <rect key="frame" x="0.0" y="390" width="600" height="210"/>
+                                <color key="backgroundColor" red="0.043137254901960784" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="BitMaker Labs Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-bF-szJ">
+                                <rect key="frame" x="22" y="350" width="350" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.18469585226554397" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-DU-vfa">
+                                <rect key="frame" x="16" y="405" width="400" height="180"/>
+                                <string key="text">In the time of chimpanzees I was a monkey.  Mutated my brains and mouth because I'm chunky.  With the plastic eyeballs, spraypaint the vegetables with the stock food stove and the beef cake pantyhose.  Baby's in Reno with the vitamin D, gotta couple of couches or sleep on the love seat.  Try to commit. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="top" secondItem="Gb3-bF-szJ" secondAttribute="bottom" constant="11" id="AcL-TE-Ki0"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="leading" secondItem="cD6-Pr-G0Y" secondAttribute="leadingMargin" id="Cq5-3r-FDZ"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="leading" secondItem="cD6-Pr-G0Y" secondAttribute="leadingMargin" id="EkE-C8-oMG"/>
+                            <constraint firstItem="guN-gj-VLk" firstAttribute="top" secondItem="hZf-DU-vfa" secondAttribute="bottom" priority="250" id="GSt-rG-cdk"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="leading" secondItem="cD6-Pr-G0Y" secondAttribute="leadingMargin" id="Ile-zw-Tzi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hZf-DU-vfa" secondAttribute="trailing" id="M2m-2f-wZZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hZf-DU-vfa" secondAttribute="trailing" constant="50" id="P92-hR-Avm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hZf-DU-vfa" secondAttribute="trailing" constant="168" id="Ugf-nt-3Ul"/>
+                            <constraint firstItem="Gb3-bF-szJ" firstAttribute="leading" secondItem="cD6-Pr-G0Y" secondAttribute="leadingMargin" constant="6" id="Vtb-VP-DfL"/>
+                            <constraint firstItem="9p3-qe-Qpg" firstAttribute="top" secondItem="cD6-Pr-G0Y" secondAttribute="top" id="Xgp-5t-oP0"/>
+                            <constraint firstAttribute="trailing" secondItem="9p3-qe-Qpg" secondAttribute="trailing" id="Ziu-vM-cI9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gb3-bF-szJ" secondAttribute="trailing" constant="40" id="chX-bf-nvz"/>
+                            <constraint firstItem="9p3-qe-Qpg" firstAttribute="leading" secondItem="cD6-Pr-G0Y" secondAttribute="leading" id="cvg-85-qXj"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="top" secondItem="Gb3-bF-szJ" secondAttribute="bottom" constant="41" id="kiz-9M-2Bn"/>
+                            <constraint firstItem="Gb3-bF-szJ" firstAttribute="top" secondItem="Tb9-Xi-yl0" secondAttribute="bottom" constant="330" id="lma-bX-9eU"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="top" secondItem="Gb3-bF-szJ" secondAttribute="bottom" constant="11" id="oec-RA-b1i"/>
+                            <constraint firstItem="hZf-DU-vfa" firstAttribute="top" secondItem="Gb3-bF-szJ" secondAttribute="bottom" constant="11" id="yeW-vz-fnz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="M2m-2f-wZZ"/>
+                                <exclude reference="Ugf-nt-3Ul"/>
+                                <exclude reference="kiz-9M-2Bn"/>
+                                <exclude reference="yeW-vz-fnz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9I-8b-73s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="510"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Product Info View" width="16" height="16"/>
-        <image name="tshirt" width="16" height="16"/>
+        <image name="600477_10150861154782032_4534596_n" width="960" height="717"/>
+        <image name="tshirt" width="800" height="676"/>
     </resources>
 </document>
