@@ -7,12 +7,14 @@ class modelVCViewController: UIViewController {
     @IBOutlet weak var descriptionText: UILabel!
     
     var titleData: String?
+    var descriptionData: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.titleHeader.text = titleData//"New Title"
-        self.descriptionText.text = "This is some text blah blah blah blah"
+        self.descriptionText.text = descriptionData
+
     }
 
     

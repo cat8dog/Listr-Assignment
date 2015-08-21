@@ -5,7 +5,7 @@ class ListrViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var myPeeps = ["Cat", "Gavin", "Hudson", "Dennis", "CZ", "Elise"]
 
-    
+    var indexPath:NSIndexPath = NSIndexPath()
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -35,7 +35,7 @@ class ListrViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // added delegate method for didSelectRowAtIndexPath
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        self.indexPath = indexPath
     
     // alert variable (feature of UIAlertController class, as the former UIAlertView is now depreciated)
         var alert:UIAlertController = UIAlertController(title: "Row Selected", message: "You've selected a row", preferredStyle: UIAlertControllerStyle.Alert)
@@ -62,8 +62,12 @@ class ListrViewController: UIViewController, UITableViewDelegate, UITableViewDat
         {
             if let modelVCViewController = segue.destinationViewController as? modelVCViewController {
                 // Do something cool. Like pass data from one view controller to another.
-                modelVCViewController.titleData = "Some Funky Text"
+                modelVCViewController.titleData = "My Peeps"
+                
+                modelVCViewController.descriptionData = myPeeps[indexPath.row]
+        
             }
+        
         }
     }
 }
