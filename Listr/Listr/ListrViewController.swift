@@ -1,10 +1,3 @@
-//
-//  ListrViewController.swift
-//  Listr
-//
-//  Created by Catherine Reyto on 2015-08-19.
-//  Copyright (c) 2015 Catherine Reyto. All rights reserved.
-//
 
 import UIKit
 
@@ -62,5 +55,17 @@ class ListrViewController: UIViewController, UITableViewDelegate, UITableViewDat
   
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "alertSegue"
+        {
+            if let modelVCViewController = segue.destinationViewController as? modelVCViewController {
+                // Do something cool. Like pass data from one view controller to another.
+                modelVCViewController.titleData = "Some Funky Text"
+            }
+        }
+    }
 }
+
+
