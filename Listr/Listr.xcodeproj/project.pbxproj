@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		28FE51141B8507B20099B371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE51131B8507B20099B371 /* AppDelegate.swift */; };
 		28FE51161B8507B20099B371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE51151B8507B20099B371 /* ViewController.swift */; };
-		28FE51191B8507B20099B371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE51171B8507B20099B371 /* Main.storyboard */; };
 		28FE511B1B8507B20099B371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FE511A1B8507B20099B371 /* Images.xcassets */; };
 		28FE511E1B8507B20099B371 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FE511C1B8507B20099B371 /* LaunchScreen.xib */; };
 		28FE512A1B8507B20099B371 /* ListrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE51291B8507B20099B371 /* ListrTests.swift */; };
 		28FE51341B8509120099B371 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE51331B8509120099B371 /* Assignment.swift */; };
 		28FE51361B854B920099B371 /* ListrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE51351B854B920099B371 /* ListrViewController.swift */; };
+		28FE51D31B86BEFD0099B371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE51D21B86BEFD0099B371 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,6 @@
 		28FE51121B8507B20099B371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FE51131B8507B20099B371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28FE51151B8507B20099B371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28FE51181B8507B20099B371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28FE511A1B8507B20099B371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28FE511D1B8507B20099B371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28FE51231B8507B20099B371 /* ListrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +39,7 @@
 		28FE51291B8507B20099B371 /* ListrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListrTests.swift; sourceTree = "<group>"; };
 		28FE51331B8509120099B371 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		28FE51351B854B920099B371 /* ListrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListrViewController.swift; sourceTree = "<group>"; };
+		28FE51D21B86BEFD0099B371 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,11 @@
 		28FE51101B8507B20099B371 /* Listr */ = {
 			isa = PBXGroup;
 			children = (
+				28FE51D21B86BEFD0099B371 /* Main.storyboard */,
 				28FE51131B8507B20099B371 /* AppDelegate.swift */,
 				28FE51151B8507B20099B371 /* ViewController.swift */,
 				28FE51331B8509120099B371 /* Assignment.swift */,
 				28FE51351B854B920099B371 /* ListrViewController.swift */,
-				28FE51171B8507B20099B371 /* Main.storyboard */,
 				28FE511A1B8507B20099B371 /* Images.xcassets */,
 				28FE511C1B8507B20099B371 /* LaunchScreen.xib */,
 				28FE51111B8507B20099B371 /* Supporting Files */,
@@ -198,7 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FE51191B8507B20099B371 /* Main.storyboard in Resources */,
+				28FE51D31B86BEFD0099B371 /* Main.storyboard in Resources */,
 				28FE511E1B8507B20099B371 /* LaunchScreen.xib in Resources */,
 				28FE511B1B8507B20099B371 /* Images.xcassets in Resources */,
 			);
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28FE51171B8507B20099B371 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28FE51181B8507B20099B371 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28FE511C1B8507B20099B371 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +411,7 @@
 				28FE512F1B8507B20099B371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28FE51301B8507B20099B371 /* Build configuration list for PBXNativeTarget "ListrTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +420,7 @@
 				28FE51321B8507B20099B371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
