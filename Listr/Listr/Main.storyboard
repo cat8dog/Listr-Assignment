@@ -18,46 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mec-Vn-0wZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-TT-bKl">
+                                <rect key="frame" x="-5" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="OQT-Zy-Wse">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OQT-Zy-Wse" id="y8Y-tW-9gy">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="alertSegue" id="Gsa-Se-8Ju"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
-                                </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="Oov-ll-LIs" id="KVH-fn-5pV"/>
-                                    <outlet property="delegate" destination="Oov-ll-LIs" id="ktM-Ri-leB"/>
+                                    <outlet property="dataSource" destination="Oov-ll-LIs" id="2ts-Cu-rki"/>
+                                    <outlet property="delegate" destination="Oov-ll-LIs" id="dc5-t4-6OU"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="mec-Vn-0wZ"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="subviews">
-                                <include reference="mec-Vn-0wZ"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="27X-Or-37i"/>
                     <connections>
-                        <outlet property="tableView" destination="mec-Vn-0wZ" id="gTw-rX-QUp"/>
+                        <outlet property="tableView" destination="Oy4-TT-bKl" id="21B-tV-lVP"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="alertSegue" id="qHb-24-42h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4R-PM-ezX" userLabel="First Responder" sceneMemberID="firstResponder"/>

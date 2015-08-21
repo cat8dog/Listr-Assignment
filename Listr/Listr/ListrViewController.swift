@@ -11,15 +11,16 @@ import UIKit
 class ListrViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var myPeeps = ["Cat", "Gavin", "Hudson", "Dennis", "CZ", "Elise"]
-    @IBOutlet weak var tableView: UITableView!
+
     
+    @IBOutlet weak var tableView: UITableView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+       self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
    
